@@ -1,0 +1,166 @@
+@font-face {
+    font-family: MyFont; 
+    src: url(../../public/fonts/AlegreyaSansSC-Light.ttf);
+  }
+body, input, textarea, button {
+    font-family: MyFont;
+}
+input {
+    border: 2px solid black;
+    padding:5px;
+}
+
+input[type="file" i] {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+    appearance: none;
+    background-color: white;
+    cursor: default;
+    align-items: baseline;
+    color: none;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding:5px;
+    overflow: hidden !important;
+}
+input[type="file" i] + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    background-color: black;
+    display: inline-block;
+}
+p {
+    text-align: center;
+}
+input[type="file" i] + label,
+input[type="file" i] + label:hover {
+    background-color: white;
+    
+    border: 2px solid black;
+}
+textarea{
+    border: 2px solid black;
+    padding:5px;
+}
+body {
+    margin:0px;
+    margin-bottom: 5%;
+    background-color: $background;
+}
+
+#acc {
+    height:40px; 
+    padding:10px;
+    border-radius: 50%;
+}
+h1 {
+    width:100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45.3455px;
+    line-height: 54px;
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+.window h1 {
+    width: 100%;
+
+}
+
+.window {
+    background-color: $itemback;
+    width: fit-content;
+    padding:30px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    margin:auto;
+    
+
+}
+
+.window label+input,input+label, .servicesList{
+    margin-bottom:30px;
+    
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color:white;
+}
+.submit{
+    position: relative;
+    margin-top:40px;
+    bottom:-40px;
+}
+.Button {
+    background-color:$button; 
+    padding:20px;
+    color:white;
+    border: none;
+    width:160px;
+    text-align: center;
+    cursor:pointer;
+    margin:40px
+}
+.containerList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.containerList .Button {
+    margin:auto;
+}
+
+
+.Item {
+    background-color:$itemback;
+    padding:40px;
+    margin:30px;
+    display:flex;
+    flex-direction: column;
+    width: 25%
+}
+
+label {
+    font-weight: bold;
+}
+
+
+.connexion {
+        width: fit-content;
+        padding:30px;
+        text-align:center;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        flex-wrap: wrap;
+        margin:auto;
+        
+}
+
+.connexion input{
+    margin-bottom:30px;
+    
+}
+
+.connexion .Button{
+    margin-top:0px;
+    
+}

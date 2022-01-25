@@ -1,0 +1,12 @@
+$background: #F5EEDC;
+$headerBg: #C6A280;
+$itemback: #fff7f0;
+$button : #56382E;
+$menu: #E0C8A2;
+
+
+@import './components/header.scss';
+@import './components/menuTri.scss';
+@import './pages/catalogue.scss';
+@import './pages/hebergement.scss';
+@import './_settings.scss';
