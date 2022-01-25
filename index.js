@@ -20,8 +20,12 @@ app.use((err,req,res,next) => {
         message:"Something went really wrong",
     });
 });
-
-const PORT = process.env.PORT;
-app.listen(PORT, () => {
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('build'))
+    app.get('*', (req, res) => {
+        req.sendFile(path.resolve(__dirname,'build','index.html'));
+    })
+}
+app.listen(process.env.PORT || 5000, () => {
     console.log('Server started !');
 });

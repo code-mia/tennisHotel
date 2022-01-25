@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: `https://tennis-hotel.herokuapp.com`
+  baseURL: 'https://tennis-hotel.herokuapp.com'
 });
 
 
