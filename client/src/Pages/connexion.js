@@ -1,4 +1,5 @@
 import Utilisateur from '../util/utilisateur';
+import React, { Component }  from 'react';
 function Connexion(){
     function submit(e) {
         

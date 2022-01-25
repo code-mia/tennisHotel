@@ -14,6 +14,7 @@ import ValidationReservation from './Pages/validerReservation.js';
 import MesReservations from './Pages/mesReservations.js';
 import MesHebergements from './Pages/mesHebergements.js';
 import MettreAJour from './Pages/mettreAJour.js';
+import React, { Component }  from 'react';
 export default function App() {
   
   return (
