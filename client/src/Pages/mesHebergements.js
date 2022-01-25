@@ -24,7 +24,7 @@ function Index(){
     <>
     {hebergements.map((hebergement) => (
         <div key={hebergement.idhebergement} className="Item">
-        <img src="./images/hotel1.jpg"></img>
+        <img src="./images/Hotel1.jpg"></img>
         <h2>{hebergement.nom}</h2>
         <form action="hebergement" method="get">
         <Link class="Button" to={`/mettreAJour/${hebergement.idhebergement}`}> Mettre à jour </Link>

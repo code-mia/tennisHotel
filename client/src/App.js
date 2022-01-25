@@ -23,20 +23,20 @@ export default function App() {
       <HashRouter>
         <Routes>
         <Route path="/" element={<Index/>} />
-        <Route path="catalogue" element={<Catalogue/>} />
-        <Route path="hebergement/:id" element={<Hebergement/>} />
-        <Route path="reserver/:id" element={<Reserver/>} />
-        <Route path="proposer" element={<Proposer/>} />
-        <Route path="connexion" element={<Connexion/>} />
-        <Route path="profil" element={<Connexion/>} />
-        <Route path="recherche" element={<Recherche/>} />
-        <Route path="inscription" element={<Inscription/>} />
-        <Route path="erreur" element={<Erreur/>} />
-        <Route path="validationHebergement" element={<ValiderHebergement/>} />
-        <Route path="validationReservation" element={<ValidationReservation/>} />
-        <Route path="mesReservations" element={<MesReservations/>} />
-        <Route path="mesHebergements" element={<MesHebergements/>} />
-        <Route path="mettreAJour/:id" element={<MettreAJour/>} />
+        <Route path="/catalogue" element={<Catalogue/>} />
+        <Route path="/hebergement/:id" element={<Hebergement/>} />
+        <Route path="/reserver/:id" element={<Reserver/>} />
+        <Route path="/proposer" element={<Proposer/>} />
+        <Route path="/connexion" element={<Connexion/>} />
+        <Route path="/profil" element={<Connexion/>} />
+        <Route path="/recherche" element={<Recherche/>} />
+        <Route path="/inscription" element={<Inscription/>} />
+        <Route path="/erreur" element={<Erreur/>} />
+        <Route path="/validationHebergement" element={<ValiderHebergement/>} />
+        <Route path="/validationReservation" element={<ValidationReservation/>} />
+        <Route path="/mesReservations" element={<MesReservations/>} />
+        <Route path="/mesHebergements" element={<MesHebergements/>} />
+        <Route path="/mettreAJour/:id" element={<MettreAJour/>} />
         </Routes>
       </HashRouter>
       </div>

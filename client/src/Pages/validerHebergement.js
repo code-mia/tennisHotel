@@ -47,7 +47,7 @@ function ValiderHebergement(){
     <div class="containerList">
     {hebergements.map((hebergement) => (
         <div key={hebergement.idhebergement} className="Item">
-        <img src={process.env.PUBLIC_URL + "/images/hotel1.jpg"}></img>
+        <img src={process.env.PUBLIC_URL + "/images/Hotel1.jpg"}></img>
         <div>
         <h2>Nom de l'hotel : {hebergement.nom}</h2>
         <h2>Localisation : {hebergement.localisation}</h2>

@@ -21,7 +21,7 @@ function MesReservations(){
     <h1>Mes réservations</h1>
     {hebergements.map((hebergement) => (
         <div key={hebergement.idhebergement} className="Item">
-        <img src="./images/hotel1.jpg"></img>
+        <img src="./images/Hotel1.jpg"></img>
         <h2>{hebergement.nom}</h2>
         <form action="hebergement" method="get">
         <div class="Button"><Link to={`/informationsHebergement/${hebergement.idhebergement}`}> Voir les informations </Link></div>

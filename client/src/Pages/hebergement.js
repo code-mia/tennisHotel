@@ -21,7 +21,7 @@ function Hebergement ( ) {
                 <div class="leftFiche">
                  <h1>{hebergement.nom}</h1>
                  <h2>{hebergement.localisation}</h2>
-                 <img src={process.env.PUBLIC_URL + "/images/hotel1.jpg"} class="logo"></img>
+                 <img src={process.env.PUBLIC_URL + "/images/Hotel1.jpg"} class="logo"></img>
                  <div>{hebergement.nombreEtoiles}</div>
                  <h2>Description</h2>
                  <div class="Descr"> {hebergement.description}</div>
