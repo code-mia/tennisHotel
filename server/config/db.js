@@ -3,15 +3,15 @@ const mysql = require("mysql2");
 // DB server
 const pool = mysql.createPool({
 
-    host: process.env.DB_HOST,
+    host: "eu-cdbr-west-02.cleardb.net",
  
-    user: process.env.DB_USER,
+    user: "b1bc4d96860b6a",
  
-    password: process.env.DB_PWD,
+    password: "8392dca1",
 
-    database : process.env.DB_NAME,
+    database : "heroku_9c574cbc768e03b",
  
   });
-
+ 
 
 module.exports = pool.promise();
