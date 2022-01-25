@@ -38,16 +38,16 @@ const Header = () => {
             setcoLink("#")
         }
         else {
-            setcoLink("../connexion")
+            setcoLink("/connexion")
         }
     }
     return (
     <div class="header" onLoad={affichageUser}>
         <div class="side">
-        <a href="../proposer"><p>Proposer Un Hébergement</p></a>
-        <a href="../catalogue"><p>Catalogue</p></a>
+        <a href="/proposer"><p>Proposer Un Hébergement</p></a>
+        <a href="/catalogue"><p>Catalogue</p></a>
         </div>
-        <a href="../"><img src={process.env.PUBLIC_URL + "/images/tennishotellogo.png"} class="logo"></img></a>
+        <a href="/"><img src={process.env.PUBLIC_URL + "/images/tennishotellogo.png"} class="logo"></img></a>
         <div class="side">
         <SearchBar/>
         <div id="user">
