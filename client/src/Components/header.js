@@ -21,14 +21,14 @@ const Header = () => {
         let string = ""
         if (Utilisateur.correctUser()) {
             if (Utilisateur.isAdmin()) {
-                string += `<li><a href='/validationHebergement'>Valider Hebergements</a></li>`
-                string += `<li><a href='/validationReservation'>Valider Reservation</a></li>`
+                string += `<li><a href='/#/validationHebergement'>Valider Hebergements</a></li>`
+                string += `<li><a href='/#/validationReservation'>Valider Reservation</a></li>`
             }
             else if (Utilisateur.isArbitre() ||Utilisateur.isJoueur()) {
-                string += `<li><a href='/mesReservations'>Mes Reservations</a></li>`
+                string += `<li><a href='/#/mesReservations'>Mes Reservations</a></li>`
             }
             else if (Utilisateur.isGerant()) {
-                string += `<li><a href='/mesHebergements'>Mes hebergements</a></li>`
+                string += `<li><a href='/#/mesHebergements'>Mes hebergements</a></li>`
             }
             string += `<li><a id='deconnexion' href='/'>Deconnexion</a></li>`
             console.log(Utilisateur.isAdmin());
