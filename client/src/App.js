@@ -8,7 +8,7 @@ import Recherche from './Pages/recherche.js';
 import Inscription from './Pages/inscription.js';
 import Erreur from './Pages/erreur.js';
 import Reserver from './Pages/reserver.js';
-import {BrowserRouter,Routes,Route, Router} from "react-router-dom";
+import {BrowserRouter,Routes,Route, Router,HashRouter} from "react-router-dom";
 import ValiderHebergement from './Pages/validerHebergement.js';
 import ValidationReservation from './Pages/validerReservation.js';
 import MesReservations from './Pages/mesReservations.js';
@@ -20,7 +20,7 @@ export default function App() {
       <div>
       
       <Header/> 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
         <Route path="/" element={<Index/>} />
         <Route path="catalogue" element={<Catalogue/>} />
@@ -38,7 +38,7 @@ export default function App() {
         <Route path="mesHebergements" element={<MesHebergements/>} />
         <Route path="mettreAJour/:id" element={<MettreAJour/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       </div>
     )
 };
