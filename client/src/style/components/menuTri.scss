@@ -1,0 +1,24 @@
+.menuTri {
+    
+    background-color: #C6A280;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    border: 2px solid #56382E;
+}
+
+.menuTri div {
+    display: inline-block;
+    padding: 20px;
+    width: 25%;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+.menuTri div:last-child {
+    border-right: none;
+}
+
+.menuTri div h2 {
+    text-align: center;
+    margin: auto;
+}
